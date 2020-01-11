@@ -1,0 +1,308 @@
+@font-face
+{
+	font-family: "Myriad Pro";
+	src:url(font/MyriadProRegular.woff) format("woff");
+	font-weight: normal;
+  	font-style: normal;
+}
+
+@font-face
+{
+	font-family: "Myriad Pro";
+	src:url(font/MyriadProItalic.woff) format("woff");
+	font-weight: normal;
+  	font-style: italic;
+}
+
+@font-face
+{
+	font-family: "Myriad Pro";
+	src:url(font/MyriadProSemiBold.woff) format("woff");
+	font-weight: 700;
+  	font-style: normal;
+}
+
+body
+{
+	font-family: "Myriad Pro", sans-serif;
+	background-color: #161616;
+}
+
+
+ul
+{
+	list-style: none;
+	padding:0px;
+}
+
+main
+{
+	margin-top:-16px;
+}
+/*Стили для работы*/
+
+.back-white
+{
+	background-color: white;
+}
+
+.hero
+{
+	background: url(img/header2.png) no-repeat,
+	url(img/header1.png) repeat;
+	background-size: contain;
+	
+}
+
+.hero p
+{
+	margin:0px;
+}
+
+.style-for-a
+{
+	text-decoration: none;
+	color: #ffc600;;
+}
+
+.style-for-a:hover
+{
+	color: white;
+	border-bottom: 1px solid #ffc600;
+}
+
+.container
+{
+	margin: 0 auto !important;
+	min-width: 1400px;
+	max-width: 1400px;
+}
+
+.margin-for-content
+{
+	margin:0 100px;
+}
+
+.yellow-first-letter:first-letter
+{
+	color: #ffc600;
+}
+
+/*Хедер*/
+
+.hero section:nth-child(1)
+{
+	margin-bottom: 45px;
+}
+
+.text-for-header
+{
+	padding: 115px 0px 0px 35px;
+}
+
+.text-for-header>p
+{
+	color: white;
+	font-size: 202px;
+	letter-spacing: -12px;
+    font-weight: 700;
+    line-height: 150px;
+}
+
+.text-block-header
+{
+	padding: 20px 0px 0px 10px;
+	font-size:18px;
+	max-width: 380px;
+	color: white;
+}
+
+.text-block-header p:nth-child(2)
+{
+	padding-top: 30px;
+}
+
+.hero section:nth-child(2)
+{
+	background-image: url(img/header3.png);
+	background-size: cover;
+	min-height: 655px;
+}
+
+.menu-for-header
+{
+	padding:70px 0px 0px 45px;
+}
+
+.menu-for-header p
+{
+	max-width: 440px;
+	padding-bottom: 60px;
+	line-height: 48px;
+	color: white;
+	font-size:60px;
+}
+
+.menu-for-header p span
+{
+	color: #ffc600;
+}
+
+.menu li
+{
+	margin-right: 40px;
+	display: inline-block;
+}
+
+.menu li a
+{
+	font-size: 18px;
+}
+
+/*Страница About*/
+
+.about
+{
+	background-color: white;
+}
+
+.quality
+{
+	display: flex;
+	justify-content: center;
+	margin:0px 125px 0px 110px;
+	padding-bottom: 100px;
+}
+
+.quality .qual
+{
+	width: 33%;
+	text-align: center;
+}
+
+.about-inform
+{
+	display: flex;
+	justify-content: center;
+}
+
+.about-inform div
+{
+	width: 50%;
+}
+
+.qual p:nth-of-type(1)
+{
+	color: #000000;
+	font-size: 18px;
+	padding-bottom:20px;
+	margin: 0px;
+}
+
+.qual p:nth-of-type(2),
+.qual p:nth-of-type(3)
+{
+	margin-top:0px;
+	color: #000000;
+	font-size: 10px;
+	font-style: italic;
+
+}
+
+.qual
+{
+	padding:0px 45px;
+}
+
+.picture-for-quality
+{
+	
+	background:url(img/quality.png) no-repeat 50% 25%,
+	url(img/Layer_8.png) no-repeat 50% 0% ;
+	min-height: 57px;
+	padding-bottom: 25px;
+}
+
+.text-for-about
+{
+	padding:20px 0px 0px 15px;
+	margin-bottom: 55px;
+
+}
+
+
+.text-for-about p:nth-child(1)
+{
+	color: #000000;
+	font-size: 16px;
+	font-style: italic;
+}
+
+.text-for-about p:nth-child(2)
+{
+	font-size: 14px;
+	color: #595959;
+}
+
+.name-for-about p:nth-child(1)
+{
+	margin:0px;
+	color: #717171;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.name-for-about p:nth-child(2)
+{
+	line-height: 40px;
+	margin:0px;
+	color: #000000;
+	font-weight: 700;
+	font-size: 80px;
+	letter-spacing: -3px;
+}
+
+.name-for-about
+{
+	padding:70px 0px 0px 135px;
+}
+
+/*Третья секция*/
+
+.head-proj
+{
+	padding:0px 0px 20px 80px;
+}
+
+.head-proj p 
+{
+	margin:-2px;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.head-proj ul li
+{
+	display: inline-block;
+}
+
+.head-proj ul li a
+{
+	font-size: 9px;
+	font-weight: 700;
+	color:black;
+}
+
+.proj-pict
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+.picture-game 
+{
+	width: 25%;
+}
+
