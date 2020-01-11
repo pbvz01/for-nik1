@@ -107,6 +107,7 @@ main
 	letter-spacing: -12px;
     font-weight: 700;
     line-height: 150px;
+    text-shadow:0px 0px 2px white;
 }
 
 .text-block-header
