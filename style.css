@@ -8,7 +8,7 @@
 
 @font-face
 {
-	font-family: "Myriad Pro";
+	font-family: "Myriad Pro - it";
 	src:url(font/MyriadProItalic.woff) format("woff");
 	font-weight: normal;
   	font-style: italic;
@@ -339,14 +339,24 @@ main
 	overflow: hidden;
 }
 
+
 .picture-game img
 {
 	width: 100%;
+	min-height: 267px;
 }
 
 .picture-game 
 {
 	width: 25%;
+}
+
+.proj-pict div:nth-child(5),
+.proj-pict div:nth-child(6),
+.proj-pict div:nth-child(7),
+.proj-pict div:nth-child(8)
+{
+	margin-top: -5px;
 }
 /*Четвертая секция*/
 
@@ -366,6 +376,7 @@ main
 	color: #000000;
 	font-size: 16px;
 	font-style:italic;
+	margin-top:0px;
 }
 
 .for-information
@@ -402,12 +413,23 @@ main
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	padding-bottom: 65px;
 }
 
 .info-str-prj div
 {
 	width: 50%;
+	box-sizing: border-box;
+	margin-top:-5px;	
 }
+
+.info-str-prj div:nth-child(2),
+.info-str-prj div:nth-child(3),
+.info-str-prj div:nth-child(6)
+{
+	padding:0px 40px 0px 35px;
+}
+
 
 .info-str-prj img
 {
@@ -420,6 +442,7 @@ main
 	color: #1d1d1d;
 	font-weight:700;
 }
+
 
 /*Пятая секция*/
 
@@ -463,7 +486,7 @@ main
 {
 	background:url(img/joker.png) no-repeat ,
 	 linear-gradient(to right, #72506d, #6c516d, #3b4765, #334261);
-	 background-size: cover;
+	 background-size: 100% 100%;
 
 }
 
@@ -530,4 +553,340 @@ main
 .joker-content div:nth-child(odd)
 {
 	padding:0px 90px 55px 0px;
+}
+
+/*Шестая секция*/
+
+.our-team-name .yellow-first-letter::first-letter
+{
+	font-size:50px;
+	letter-spacing: -3px;
+}
+
+.our-team-name p span
+{
+	font-size: 50px;
+	letter-spacing: -6px;
+}
+
+.our-team-name p
+{
+	min-width: 145px;
+	position: relative;
+}
+
+.our-team-name p::before
+{
+	content: "";
+	position: absolute;
+	height: 80px;
+	width: 1px;
+	background-color: lightgray;
+	transform:rotate(-90deg);
+	top: 14px;
+    left: 102px;
+}
+
+
+.header-for-our-team
+{
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	margin:0px 70px 0px 50px;
+}
+
+.header-for-our-team div
+{
+	box-sizing: border-box;
+}
+
+.our-team-text
+{
+	padding:85px 160px 35px 0px;
+	width: 72%
+}
+
+.our-team-name
+{
+	padding: 100px 145px 0px 0px;
+	width: 28%
+}
+
+.our-team-post
+{
+	width: 72%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom:134px;
+}
+
+.our-team-post div
+{
+	text-align: center;
+}
+
+.our-team-post p
+{
+	font-size: 16px;
+}
+
+.our-team-post div p:nth-of-type(1)
+{
+	font-weight: 700;
+}
+
+.our-team-post div p:nth-of-type(2)
+{
+	font-style:italic;
+}
+
+/*Седьмая секция*/
+
+.about-author img
+{
+	border-radius: 100%;
+	border:3px solid #ffc600;
+}
+
+.about-author div:nth-child(2)
+{
+	text-align: center;
+	margin-left: 82px;
+}
+
+.text-for-author .yellow-first-letter::first-letter
+{
+	font-size:50px;
+	letter-spacing: -3px;
+}
+
+.text-for-author
+{
+	color: white;
+	padding:55px 0px 15px 50px;
+}
+
+.text-for-author p
+{
+	position: relative;
+}
+
+.text-for-author p::before
+{
+	content:"";
+	position: absolute;
+	height: 80px;
+	width: 1px;
+	background-color: lightgray;
+	transform:rotate(-90deg);
+	top: 14px;
+    left: 130px;
+}
+
+.about-author
+{
+	display: flex;
+	justify-content: center;
+	margin:0px 275px 0px 90px;
+	align-items: center;
+	padding-bottom: 120px;
+}
+
+.about-author p
+{
+	color:white;
+}
+
+/*Восьмая секция*/
+
+.blogs
+{
+	margin:0 60px;
+	display: flex;
+}
+
+.blogs-pict
+{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+}
+
+.blogs-pict>div
+{
+	width: 25%;
+	box-sizing: border-box;
+}
+
+.blogs-pict>div:nth-child(1)
+{
+	margin-right: 80px;
+}
+
+.blogs-pict>div:nth-child(2)
+{
+	margin-right: 110px;
+
+}
+
+
+.blogs-pict div p:nth-of-type(3)
+{
+	font-style: italic;
+	font-size: 12px;
+}
+
+.blogs>div:nth-child(1)
+{
+	width: 30%;
+	padding-top:30px;
+}
+
+.blogs>div:nth-child(2)
+{
+	width: 70%;
+}
+
+.blogs img
+{
+	min-height: 206px;
+	max-width: 180px;
+}
+
+.blogs ul
+{
+	padding-left: 55px;
+	padding-top: 20px;
+	padding-bottom: 70px;
+}
+
+.blogs-a
+{
+	font-size: 18px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.blogs-a:hover
+{
+	color: #ffc600;
+}
+
+.blogs ul li
+{
+	padding-bottom: 30px;
+}
+
+/*Девятая секция*/
+
+.contact
+{
+	display: flex;
+}
+
+.map
+{
+	background: url(img/map.png) no-repeat;
+	background-size: 160% 190%;
+	width: 40%;
+	position: relative;
+}
+
+.map::before
+{
+	content:"";
+	position: absolute;
+	left: 230px;
+	top:360px;
+	display: block;
+	min-width: 57px;
+	min-height: 57px;
+	border:2px solid #ffc600;
+	background-color: black;
+	border-radius: 100%;
+}
+
+.map::after
+{
+	content:"Sublime";
+	color: white;
+	font-size: 14px;
+	position: absolute;
+	left: 236px;
+	top:380px;
+}
+
+.contact-us
+{
+	width: 60%;
+	background-color:#2046b3;
+	box-sizing: border-box;
+}
+
+.contact-us .yellow-first-letter
+{
+	font-weight: 700;
+	font-size:50px;
+	color: white;
+	margin-left:100px;
+	margin-bottom: 30px;
+}
+
+form
+{
+	padding:0px 210px 0px 75px;
+	box-sizing: border-box;
+}
+
+input[ name="name"]
+{
+	width: 96%;
+}
+
+input[name="mobile"]
+{
+	margin-right: 45px;
+	width: 37%;
+}
+
+input[type="email"]
+{
+	width: 43%;
+}
+
+input{
+	background:transparent;
+	border:2px solid white;
+	font-size: 16px;
+	color: white;
+	font-weight: 700;
+	padding:10px 0px 10px 15px;
+}
+
+input::-webkit-input-placeholder 
+{ 
+	color: white; 
+}
+
+textarea
+{
+	background: transparent;
+	border:2px solid white;
+	width: 98%;
+	padding:10px 0px 10px 15px;
+	font-size: 16px;
+	color: white;
+	font-weight: 700;
+
+}
+
+input[type="submit"]
+{
+	font-size: 16px;
+	font-weight: 700;
+	color: black;
+	background-color: #ffc600;
+	border:none;
+	padding: 10px 40px 10px 30px;
 }
