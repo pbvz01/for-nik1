@@ -41,9 +41,9 @@ main
 }
 /*Стили для работы*/
 
-.inline-block
+.font-for-name
 {
-	display: inline-block;
+	font-size: 50px;
 }
 
 .style-for-names
@@ -61,7 +61,7 @@ main
 {
 	background: url(img/header2.png) no-repeat,
 	url(img/header1.png) repeat;
-	background-size: contain;
+	background-size: 100%;
 	
 }
 
@@ -93,9 +93,10 @@ main
 	margin:0 100px;
 }
 
-.yellow-first-letter:first-letter
+.first-letter::first-letter
 {
 	color: #ffc600;
+	font-size: 50px;
 }
 
 /*Хедер*/
@@ -113,8 +114,8 @@ main
 .text-for-header>p
 {
 	color: white;
-	font-size: 202px;
-	letter-spacing: -12px;
+	font-size: 202px !important;
+	letter-spacing: -16px;
     font-weight: 700;
     line-height: 150px;
     text-shadow:0px 0px 2px white;
@@ -265,7 +266,7 @@ main
 
 .name-for-about p:nth-child(2)
 {
-	line-height: 40px;
+	line-height: 45px;
 	margin:0px;
 	color: #000000;
 	font-weight: 700;
@@ -297,13 +298,7 @@ main
 }
 
 
-
-.head-proj .yellow-first-letter::first-letter
-{
-	font-size: 50px;
-}
-
-.head-proj .yellow-first-letter span
+.head-proj .first-letter span
 {
 	font-size: 50px;
 	letter-spacing: -6px;
@@ -329,7 +324,11 @@ main
 	font-size: 9px;
 	font-weight: 700;
 	color:black;
+	position: relative;
+	text-decoration: none;
+	padding-left: 10px;
 }
+
 
 .proj-pict
 {
@@ -360,10 +359,6 @@ main
 }
 /*Четвертая секция*/
 
-.str-proj-text .yellow-first-letter::first-letter
-{
-	font-size:50px;
-}
 
 .str-proj-text p:nth-child(1) span
 {
@@ -446,10 +441,6 @@ main
 
 /*Пятая секция*/
 
-.joker-text p::first-letter
-{
-	font-size:50px;
-}
 
 .joker-text p span
 {
@@ -557,11 +548,7 @@ main
 
 /*Шестая секция*/
 
-.our-team-name .yellow-first-letter::first-letter
-{
-	font-size:50px;
-	letter-spacing: -3px;
-}
+
 
 .our-team-name p span
 {
@@ -653,12 +640,6 @@ main
 {
 	text-align: center;
 	margin-left: 82px;
-}
-
-.text-for-author .yellow-first-letter::first-letter
-{
-	font-size:50px;
-	letter-spacing: -3px;
 }
 
 .text-for-author
@@ -788,7 +769,7 @@ main
 .map
 {
 	background: url(img/map.png) no-repeat;
-	background-size: 160% 190%;
+	background-size: 160% 100%;
 	width: 40%;
 	position: relative;
 }
@@ -797,8 +778,8 @@ main
 {
 	content:"";
 	position: absolute;
-	left: 230px;
-	top:360px;
+	left: 240px;
+	top:395px;
 	display: block;
 	min-width: 57px;
 	min-height: 57px;
@@ -813,8 +794,8 @@ main
 	color: white;
 	font-size: 14px;
 	position: absolute;
-	left: 236px;
-	top:380px;
+	left: 245px;
+	top:415px;
 }
 
 .contact-us
@@ -824,7 +805,7 @@ main
 	box-sizing: border-box;
 }
 
-.contact-us .yellow-first-letter
+.contact-us .first-letter
 {
 	font-weight: 700;
 	font-size:50px;
@@ -889,4 +870,64 @@ input[type="submit"]
 	background-color: #ffc600;
 	border:none;
 	padding: 10px 40px 10px 30px;
+}
+
+table
+{
+	text-align: left;
+	color: #ffffff;
+	margin:60px 0px 70px 100px;
+	position: relative;
+}
+
+table tr th:nth-child(1)
+{
+	font-size: 16px;
+	font-weight: 700;
+}
+
+table tr th:nth-child(2)
+{
+	font-size: 12px;
+	font-weight: none;
+	
+}
+
+table tr th
+{
+	padding:0px 25px 30px 0px;
+}
+
+caption
+{
+	padding-bottom: 35px;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+table::before
+{
+	position: absolute;
+	content:"";
+	width:2px;
+	height: 410px;
+	background-color: lightgray;
+	transform: rotate(90deg);
+	left: 190px;
+}
+
+.sprait li 
+{
+	display: inline-block;
+}
+
+.sprait
+{
+	margin:0px 0px 45px 100px;
+}
+
+.for-js
+{
+	background-color: red;
 }
